@@ -76,7 +76,7 @@ function App() {
           <div className="mt-10">
             <div className="mx-auto w-full">
               <img
-                src="https://okalog.info/wp-content/uploads/sample/sample1.jpg"
+                src="https://okalog.info/wp-content/uploads/sample/scenery/scenery_01.jpg"
                 alt=""
                 className="w-full rounded-3xl object-cover"
               />
