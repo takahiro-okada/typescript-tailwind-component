@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import './App.css';
+import React, { useState } from 'react';
 
 function App() {
   const [openMenu, setOpenMenu] = useState(false);
@@ -7,6 +7,7 @@ function App() {
   const handleMenuOpen = () => {
     setOpenMenu(!openMenu);
   };
+
   return (
     <div className="App">
       <div className="container mx-auto px-3">
@@ -46,20 +47,44 @@ function App() {
                 : 'fixed right-[-100%] ease-linear duration-300'
             }
           >
-            <ul>
-              <li>
-                <a href="https://okalog.info">ABOUT</a>
-                <a href="https://okalog.info">WORKS</a>
-                <a href="https://okalog.info">PEOPLE</a>
-                <a href="https://okalog.info">CONTACT</a>
+            <ul className="mt-6">
+              <li className="">
+                <a href="https://okalog.info/" className="py-2 inline-block">
+                  ABOUT
+                </a>
+              </li>
+              <li className="">
+                <a href="https://okalog.info/" className="py-2 inline-block">
+                  WORKS
+                </a>
+              </li>
+              <li className="">
+                <a href="https://okalog.info/" className="py-2 inline-block">
+                  PEOPLE
+                </a>
+              </li>
+              <li className="">
+                <a href="https://okalog.info/" className="py-2 inline-block">
+                  CONTACT
+                </a>
               </li>
             </ul>
           </nav>
         </header>
-        <h1>This is a sample for Drawer menu with React/Tailwind</h1>
+        <main>
+          {/* MainVisual */}
+          <div className="mt-10">
+            <div className="mx-auto w-full">
+              <img
+                src="https://okalog.info/wp-content/uploads/sample/sample1.jpg"
+                alt=""
+                className="w-full rounded-3xl object-cover"
+              />
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );
 }
-
 export default App;
